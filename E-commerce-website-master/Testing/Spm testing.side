@@ -1,0 +1,113 @@
+{
+  "id": "a2aa0b98-5b3c-41c1-9fff-7d7c93526533",
+  "version": "2.0",
+  "name": "SPM ",
+  "url": "https://66e07f7519143f78c1e3fc20--earnest-dango-386fa5.netlify.app",
+  "tests": [{
+    "id": "aba2e8ce-6e18-4577-bd00-d04b45edca4b",
+    "name": "test2",
+    "commands": [{
+      "id": "62ecea4b-99e0-4e37-82f9-da010395a4d9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d779f388-ab63-4f70-bee5-993a214c1e5a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1ffa931-039f-46c4-8b20-2b86b620cc01",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//section[@id='product1']/div/div/img)[9]",
+      "targets": [
+        ["xpath=(//section[@id='product1']/div/div/img)[9]", "xpath:idRelative"],
+        ["xpath=//section[6]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85a7f5c1-9e97-4aa8-92ba-d3a93d3cc2f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.normal:nth-child(6)",
+      "targets": [
+        ["css=.normal:nth-child(6)", "css:finder"],
+        ["xpath=//section[@id='prodetails']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5e431a0-afdf-481f-8759-1551e7070fae",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Shop",
+      "targets": [
+        ["linkText=Shop", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Shop')]", "xpath:link"],
+        ["xpath=//ul[@id='navBar']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/shop')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Shop')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a1ebf97-15aa-4dd0-be17-1c5461d12e58",
+      "comment": "",
+      "command": "click",
+      "target": "css=#lg-bag > .fa-solid",
+      "targets": [
+        ["css=#lg-bag > .fa-solid", "css:finder"],
+        ["xpath=//a[@id='lg-bag']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "facbcaf0-7a23-4f26-a000-51596fd11b1a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About",
+      "targets": [
+        ["linkText=About", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'About')]", "xpath:link"],
+        ["xpath=//ul[@id='navBar']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/about')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'About')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e978a5eb-48d1-44bc-8750-2bf318b4b0aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact",
+      "targets": [
+        ["linkText=Contact", "linkText"],
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact')]", "xpath:link"],
+        ["xpath=//ul[@id='navBar']/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/contact')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e762196d-b816-4ed1-8722-04546fc0b718",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["aba2e8ce-6e18-4577-bd00-d04b45edca4b"]
+  }],
+  "urls": ["https://66e07f7519143f78c1e3fc20--earnest-dango-386fa5.netlify.app/"],
+  "plugins": []
+}

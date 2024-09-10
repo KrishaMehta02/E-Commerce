@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <script src="https://kit.fontawesome.com/c99dcce1cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/logo.PNG" onclick="window.location.href='home.html'"></a>
+        <div>
+            <ul id="navBar">
+                <li><a  href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html" id="lg-bag"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-regular fa-circle-xmark"></i></a>
+
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <h1 class="heading">
+            <i class="fa-solid fa-cart-shopping"></i> Shopping Cart
+        </h1>
+
+        <div class="item-flex">
+            <section class="checkout">
+                <h2 class="section-heading">Payment Details</h2>
+
+                <div class="payment-form">
+
+                    <div class="payment-method">
+
+                        <button class="method selected">
+                            <i class="fa-regular fa-credit-card"></i>
+
+                            <span>Credit Card</span>
+
+                            <i class="fa-sharp fa-solid fa-square-check checkmark fill"></i>
+                        </button>
+
+                        <button class="method">
+                            <i class="fa-brands fa-paypal"></i>
+
+                            <span>PayPal</span>
+
+                            <i class="fa-sharp fa-solid fa-square-check checkmark"></i>
+                        </button>
+
+                    </div>
+
+                    <form action="#">
+
+                        <div class="cardholder-name">
+                            <label for="cardholder-name" class="label-default">Cardholder name</label>
+                            <input type="text" name="cardholder-name" id="cardholder-name" class="input-default">
+                        </div>
+
+                        <div class="card-number">
+                            <label for="card-number" class="label-default">Card number</label>
+                            <input type="number" name="card-number" id="card-number" class="input-default">
+                        </div>
+
+                        <div class="input-flex">
+
+                            <div class="expire-date">
+                                <label for="expire-date" class="label-default">Expiration date</label>
+
+                                <div class="input-flex">
+
+                                    <input type="number" name="day" id="expire-date" placeholder="31" min="1" max="31"
+                                        class="input-default">
+                                    /
+                                    <input type="number" name="month" id="expire-date" placeholder="12" min="1" max="12"
+                                        class="input-default">
+
+                                </div>
+                            </div>
+
+                            <div class="cvv">
+                                <label for="cvv" class="label-default">CVV</label>
+                                <input type="number" name="cvv" id="cvv" class="input-default">
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <button class="btn btn-primary">
+                    <b>Pay</b> $ <span id="payAmount">22.50</span>
+                </button>
+
+            </section>
+
+
+            <!--
+              - cart section
+            -->
+            <section class="cart">
+
+                <div class="cart-item-box">
+
+                    <h2 class="section-heading">Order Summery</h2>
+
+                    <div class="product-card">
+
+                        <div class="card">
+
+                            <div class="img-box">
+                                <img src="./img/cart/cart1.jpeg" alt="check shirt" width="80px"
+                                    class="product-img">
+                            </div>
+
+                            <div class="detail">
+
+                                <h4 class="product-name">Men's new Check shirt</h4>
+
+                                <div class="wrapper">
+
+                                    <div class="product-qty">
+                                        <button id="decrement">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+
+                                        <span id="quantity">1</span>
+
+                                        <button id="increment">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="price">
+                                        $ <span id="price">12.5</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <button class="product-close-btn">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product-card">
+
+                        <div class="card">
+
+                            <div class="img-box">
+                                <img src="./img/cart/cart2.jpg" alt="t-shirt" width="80px" class="product-img">
+                            </div>
+
+                            <div class="detail">
+
+                                <h4 class="product-name">Men's Shirt</h4>
+
+                                <div class="wrapper">
+
+                                    <div class="product-qty">
+                                        <button id="decrement">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+
+                                        <span id="quantity">1</span>
+
+                                        <button id="increment">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="price">
+                                        $ <span id="price">10.00</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <button class="product-close-btn">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="wrapper">
+
+                    <div class="discount-token">
+
+                        <label for="discount-token" class="label-default">Gift card/Discount code</label>
+
+                        <div class="wrapper-flex">
+
+                            <input type="text" name="discount-token" id="discount-token" class="input-default">
+
+                            <button class="btn btn-outline">Apply</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="amount">
+
+                        <div class="subtotal">
+                            <span>Subtotal</span> <span>$ <span id="subtotal">22.50</span></span>
+                        </div>
+
+                        <div class="tax">
+                            <span>Tax</span> <span>$ <span id="tax">0.50</span></span>
+                        </div>
+
+                        <div class="shipping">
+                            <span>Shipping</span> <span>$ <span id="shipping">0.00</span></span>
+                        </div>
+
+                        <div class="total">
+                            <span>Total</span> <span>$ <span id="total">23.00</span></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="section-p1">
+        <div class="col">
+            <!-- <img class="logo" src="img/logo.png" alt=""> -->
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Lorem ipsum dolor sit amet Lorem, ipsum dolor.</p>
+            <p><strong>Phone:</strong>5645454656</p>
+            <p><strong>Hours:</strong>10:00-18:00, Mon -Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Privacy and Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">View Cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install apps</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateway</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
